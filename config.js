@@ -4,9 +4,9 @@
 // ---------------------------------------------------------------
 const NEKOPAN_CONFIG = {
   // ERC-20 token contract address on Robinhood Chain
-  tokenAddress: "0x0000000000000000000000000000000000000000",
+  tokenAddress: "TBA",
   // Liquidity pool address on Robinhood Chain (used for the GeckoTerminal chart)
-  poolAddress: "0x0000000000000000000000000000000000000000",
+  poolAddress: "pairaddress",
   // GeckoTerminal network slug for Robinhood Chain
   network: "robinhood",
   // Robinhood Chain block explorer (Blockscout)
@@ -15,7 +15,7 @@ const NEKOPAN_CONFIG = {
 
 (function applyConfig() {
   const c = NEKOPAN_CONFIG;
-  const poolUrl = `https://www.geckoterminal.com/${c.network}/pools/${c.poolAddress}`;
+  const poolUrl = `https://app.uniswap.org/swap?chain=robinhood&outputCurrency=${c.tokenAddress}`;
   const chartEmbed = `${poolUrl}?embed=1&info=1&swaps=1&grayscale=0&light_chart=0`;
   const explorerToken = `${c.explorer}/token/${c.tokenAddress}`;
 
