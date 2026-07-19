@@ -4,7 +4,7 @@
 // ---------------------------------------------------------------
 const NEKOPAN_CONFIG = {
   // ERC-20 token contract address on Robinhood Chain
-  tokenAddress: "TBA",
+  tokenAddress: "0xbCAbA464EEC1adFe44D0c13caA59b0b4CC23DFf0",
   // Liquidity pool address on Robinhood Chain (used for the GeckoTerminal chart)
   poolAddress: "pairaddress",
   // GeckoTerminal network slug for Robinhood Chain
